@@ -1,7 +1,7 @@
 import os
 
 import streamlit as st
-import google.generativeai as gen_ai
+import google.generativeai as genai
 
 
 # Configure Streamlit page settings
@@ -15,8 +15,8 @@ st.set_page_config(
 
 # Set up Google Gemini-Pro AI model
 API_KEY = 'AIzaSyC8CZAEdLqtYNc5LfnHRUAicw8ziuxiPlk'
-gen_ai.configure(api_key=API_KEY)
-model = gen_ai.GenerativeModel('gemini-1.5-pro')
+genai.configure(api_key=API_KEY)
+model = genai.GenerativeModel('gemini-1.5-pro')
 
 
 # Function to translate roles between Gemini-Pro and Streamlit terminology
